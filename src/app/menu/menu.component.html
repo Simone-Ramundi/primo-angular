@@ -1,2 +1,3 @@
-<p>menu works!</p>
-<app-button *ngFor="button in menu"></app-button>
+<div class=" flex items-align justify-center">
+    <app-button *ngFor="let bottone of menu" [bottone]="bottone"></app-button>
+</div>

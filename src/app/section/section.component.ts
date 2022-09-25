@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-section',
@@ -12,4 +12,6 @@ export class SectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() sezione = {titolo:'', descrizione:'', menu: [{}]}
+  
 }
